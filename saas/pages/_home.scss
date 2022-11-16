@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.section-home {
+  height: auto;
+  margin-top: 7rem;
+}
+
+.section-accommodations {
+  text-align: center;
+  width: min(100%, 80rem);
+  margin: 0 auto;
+
+  &__picture {
+
+    &-img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+
+  }
+
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}

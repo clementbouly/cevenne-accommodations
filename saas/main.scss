@@ -1,0 +1,20 @@
+@use "base/base";
+@use "base/animation";
+@use "base/typography";
+@use "base/utils";
+
+@use "abstracts/functions";
+@use "abstracts/mixins";
+@use "abstracts/variables";
+
+@use "pages/home";
+
+@use "components/buttons";
+@use "components/bg-video";
+@use "components/slider";
+
+@use "layout/header";
+@use  "layout/grid";
+@use "layout/footer";
+@use "layout/navigation";
+@use "layout/popup";

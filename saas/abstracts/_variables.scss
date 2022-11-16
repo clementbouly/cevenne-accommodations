@@ -1,0 +1,23 @@
+// COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-dark: #777;
+$color-white: white;
+$color-black: black;
+
+$color-blue-pink-gradient: linear-gradient(
+  225deg,
+  rgba(25, 136, 247, 1) 0%,
+  rgba(247, 25, 136, 1) 100%
+);
+
+// SIZING
+$gutter-horizontal: 6rem;
+
+// SHADOW
+$normal-shadow : 0 1rem 2rem rgba($color-black, .1);
+$high-shadow : 0 1rem 2rem rgba($color-black, .5);
+

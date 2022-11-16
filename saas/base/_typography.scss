@@ -1,0 +1,16 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as *;
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.heading-secondary {}
+
+.heading-tertiary {}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 500;
+}

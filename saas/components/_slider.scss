@@ -1,0 +1,34 @@
+.slideshow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    &__image {
+        animation: scaleIn 1s ease-out;
+    }
+
+    &__title {
+        background-color: rgb(black, 0.5);
+        color: var(--white);
+        position: absolute;
+        padding: 2rem;
+        right: 7rem;
+        bottom: 8rem;
+        width: auto;
+        animation: moveInLeft 1s ease-out;
+
+        &-main {
+            font-size: 3rem;
+            font-weight: 300;
+        }
+
+        &-sub {
+            font-size: 2rem;
+            font-weight: 100;
+        }
+    }
+}
+
+.slideshow-container {}
