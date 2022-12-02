@@ -210,6 +210,7 @@ body {
 .heading-primary {
   font-size: 4rem;
   font-weight: 100;
+  font-family: "Dancing Script", cursive;
 }
 
 .paragraph {
@@ -303,7 +304,7 @@ body {
 .section-accommodations {
   text-align: center;
   width: min(100%, 80rem);
-  margin: 0 auto;
+  margin: 10rem auto;
 }
 .section-accommodations__picture-img {
   width: 100%;
@@ -430,6 +431,7 @@ body {
 .slideshow__image {
   -webkit-animation: scaleIn 1s ease-out;
           animation: scaleIn 1s ease-out;
+  width: 100%;
 }
 .slideshow__title {
   background-color: rgba(0, 0, 0, 0.5);
@@ -444,7 +446,7 @@ body {
 }
 .slideshow__title-main {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 .slideshow__title-sub {
   font-size: 2rem;
@@ -485,31 +487,62 @@ body {
   text-transform: uppercase;
 }
 
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
+.gallery {
+  background-color: var(--color2);
+  grid-area: gallery;
+  display: grid;
+  grid-template: repeat(7, 5vw)/repeat(8, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem;
+  grid-template-areas: "p1  p1  p2  p2  p2  p3  p4  p4" "p1  p1  p2  p2  p2  p3  p4  p4" "p5  p5  p2  p2  p2  p8  p8  p9" "p5  p5  p6  p6  p7  p8  p8  p9" "p5  p5  p6  p6  p13 p13 p13 p9" "p10 p11 p11 p12 p13 p13 p13 p14" "p10 p11 p11 p12 p13 p13 p13 p14";
 }
-
-.flexbox-test {
-  margin: 20rem 0;
+.gallery__item--1 {
+  grid-area: p1;
 }
-
-.flex-container {
-  margin: 0 auto;
-  max-width: 114rem;
-  width: 80%;
-  gap: 6rem;
-  display: flex;
+.gallery__item--2 {
+  grid-area: p2;
 }
-@media only screen and (max-width: 37.5em) {
-  .flex-container {
-    flex-direction: column;
-    max-width: 45rem;
-  }
+.gallery__item--3 {
+  grid-area: p3;
 }
-@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
-  .flex-container {
-    flex-direction: column;
-    max-width: 45rem;
-  }
+.gallery__item--4 {
+  grid-area: p4;
+}
+.gallery__item--5 {
+  grid-area: p5;
+}
+.gallery__item--6 {
+  grid-area: p6;
+}
+.gallery__item--7 {
+  grid-area: p7;
+}
+.gallery__item--8 {
+  grid-area: p8;
+}
+.gallery__item--9 {
+  grid-area: p9;
+}
+.gallery__item--10 {
+  grid-area: p10;
+}
+.gallery__item--11 {
+  grid-area: p11;
+}
+.gallery__item--12 {
+  grid-area: p12;
+}
+.gallery__item--13 {
+  grid-area: p13;
+}
+.gallery__item--14 {
+  grid-area: p14;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=main.css.map */

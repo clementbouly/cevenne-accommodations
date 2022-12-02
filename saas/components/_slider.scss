@@ -1,4 +1,4 @@
-.slideshow{
+.slideshow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,6 +7,8 @@
 
     &__image {
         animation: scaleIn 1s ease-out;
+        // filter: brightness(70%);
+        width: 100%;
     }
 
     &__title {
@@ -19,9 +21,10 @@
         width: auto;
         animation: moveInLeft 1s ease-out;
 
+
         &-main {
             font-size: 3rem;
-            font-weight: 300;
+            font-weight: 500;
         }
 
         &-sub {
@@ -30,5 +33,3 @@
         }
     }
 }
-
-.slideshow-container {}
