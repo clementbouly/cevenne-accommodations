@@ -1,14 +1,16 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as *;
+
 .slideshow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     position: relative;
+    height: 50rem;
 
     &__image {
         animation: scaleIn 1s ease-out;
-        // filter: brightness(70%);
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
     &__title {
@@ -21,15 +23,29 @@
         width: auto;
         animation: moveInLeft 1s ease-out;
 
+        @include respond(phone, tab-port) {
+            right: 0rem;
+            bottom: 0rem;
+            width: 100%;
+        }
+
 
         &-main {
             font-size: 3rem;
             font-weight: 500;
+
+            @include respond(phone, tab-port) {
+                font-size: 2.5rem;
+            }
         }
 
         &-sub {
             font-size: 2rem;
             font-weight: 100;
+
+            @include respond(phone, tab-port) {
+                font-size: 1.5rem;
+            }
         }
     }
 }

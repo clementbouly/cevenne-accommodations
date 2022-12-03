@@ -1,27 +1,23 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.section-home {
+.section-slider {
   height: auto;
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 
 .section-accommodations {
   text-align: center;
   width: min(100%, 80rem);
-  margin: 10rem auto;
+  margin: 3rem auto;
 
   &__picture {
-
     &-img {
       width: 100%;
       object-fit: cover;
       object-position: center;
     }
-
-
   }
-
 }
 
 .separator {
