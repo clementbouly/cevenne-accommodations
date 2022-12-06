@@ -7,16 +7,11 @@
 }
 
 .section-accommodations {
-  text-align: center;
-  width: min(100%, 80rem);
+  width: 80%; //min(100%, 90rem);
   margin: 3rem auto;
 
-  &__picture {
-    &-img {
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
+  & h1{
+    text-align: center;
   }
 }
 

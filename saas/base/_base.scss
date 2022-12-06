@@ -63,6 +63,11 @@ body {
 
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 // change color of text selected by user
 ::selection {
   background-color: var(--color8);

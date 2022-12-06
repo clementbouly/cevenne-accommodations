@@ -2,6 +2,11 @@
 @use "../abstracts/mixins" as *;
 
 .footer {
+    padding-top: 20rem;
+    height: auto;
 
-
+    &__image{
+        width: 100%;
+        transform: translateY(4px);
+    }
 }

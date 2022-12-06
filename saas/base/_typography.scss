@@ -2,14 +2,22 @@
 @use "../abstracts/mixins" as *;
 
 .heading-primary {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 100;
   font-family: 'Dancing Script', cursive;
+  color: var(--color11);
 }
 
-.heading-secondary {}
+.heading-secondary {
+  text-transform: uppercase;
+  color: var(--color11);
+  font-size: 3.5rem;
+}
 
-.heading-tertiary {}
+.heading-tertiary {
+  font-weight: 300;
+  font-size: 3rem;
+}
 
 .paragraph {
   font-size: 1.6rem;

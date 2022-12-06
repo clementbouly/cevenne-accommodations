@@ -1,21 +1,28 @@
+@use "../abstracts/mixins" as *;
+
 .gallery {
-    background-color: var(--color2);
+    background-color: var(--color1);
     grid-area: gallery;
   
     display: grid;
     grid-template: repeat(7, 5vw) / repeat(8, 1fr);
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: 1rem;
+    padding: 1rem;
   
     grid-template-areas:
-      "p1  p1  p2  p2  p2  p3  p4  p4"
-      "p1  p1  p2  p2  p2  p3  p4  p4"
+      "p1  p1  p2  p2  p2  p3  p3  p4"
+      "p1  p1  p2  p2  p2  p3  p3  p4"
       "p5  p5  p2  p2  p2  p8  p8  p9"
       "p5  p5  p6  p6  p7  p8  p8  p9"
       "p5  p5  p6  p6  p13 p13 p13 p9"
       "p10 p11 p11 p12 p13 p13 p13 p14"
       "p10 p11 p11 p12 p13 p13 p13 p14";
   
+    @include respond(phone, tab-port){
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+    
     &__item {
       &--1 {
         grid-area: p1;

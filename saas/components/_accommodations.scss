@@ -1,0 +1,85 @@
+.accommodation {
+    display: flex;
+    gap: 15rem;
+
+    margin-bottom: 15rem;
+
+    &--2 {
+        flex-direction: row-reverse;
+    }
+
+    &__images {
+        flex: 0 0 50%;
+        position: relative;
+        align-self: center;
+
+        & img {
+            outline: 1px solid var(--color6);
+            outline-offset: 0.8rem;
+        }
+
+        &--1 {
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        &--2 {
+            position: absolute;
+            width: 35%;
+            height: 85%;
+            top: 30%;
+            object-fit: cover;
+
+            &--right {
+                left: 85%;
+            }
+
+            &--left {
+                right: 80%;
+            }
+
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        &__image {
+            position: absolute;
+            top: -3.5rem;
+            width: 20rem;
+        }
+
+        &__heading {
+
+            &--pinsons {
+                color: #382FA6;
+            }
+        }
+
+        & h2 {
+            border-bottom: 1px solid currentColor;
+            position: relative;
+        }
+
+        & h3 {}
+
+        & p {
+            font-size: 1.8rem;
+            text-align: right;
+        }
+
+        & a {
+            align-self: center;
+            font-size: 2rem;
+        }
+
+    }
+
+
+
+
+}
