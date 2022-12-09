@@ -1,16 +1,15 @@
-@use "../abstracts/variables";
 @use "../abstracts/mixins" as *;
 
 .heading-primary {
   font-size: 5rem;
-  font-weight: 100;
+  font-weight: 400;
   font-family: 'Dancing Script', cursive;
-  color: var(--color11);
+  color: var(--primary-color);
 }
 
 .heading-secondary {
   text-transform: uppercase;
-  color: var(--color11);
+  color: var(--primary-color);
   font-size: 3.5rem;
 }
 

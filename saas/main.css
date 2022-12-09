@@ -26,6 +26,7 @@
   --color11: hsl(25, 30.0%, 41.0%);
   --color12: hsl(20, 30.0%, 19.0%);
   --white: white;
+  --primary-color: #A68B2F;
   --shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
@@ -214,14 +215,14 @@ a {
 }
 .heading-primary {
   font-size: 5rem;
-  font-weight: 100;
+  font-weight: 400;
   font-family: "Dancing Script", cursive;
-  color: var(--color11);
+  color: var(--primary-color);
 }
 
 .heading-secondary {
   text-transform: uppercase;
-  color: var(--color11);
+  color: var(--primary-color);
   font-size: 3.5rem;
 }
 
@@ -334,6 +335,28 @@ a {
   text-align: center;
 }
 
+.section-area_presentation {
+  background-image: url("/img/ext_2.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto;
+  padding: 20rem 0;
+}
+
+.image-separator {
+  background-image: url("/img/ext_chats.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+.section-services {
+  padding: 8rem 0;
+  text-align: center;
+}
+
 .separator {
   display: flex;
   justify-content: center;
@@ -345,6 +368,17 @@ a {
   text-transform: uppercase;
   padding: 1.5rem 4rem;
   font-weight: 600;
+  text-align: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .btn {
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .btn {
+    padding: 1rem 2rem;
+  }
 }
 .btn--primary {
   color: var(--color3);
@@ -496,8 +530,34 @@ a {
   gap: 15rem;
   margin-bottom: 15rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .accommodation {
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 8rem;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .accommodation {
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 8rem;
+  }
+}
 .accommodation--2 {
   flex-direction: row-reverse;
+}
+@media only screen and (max-width: 37.5em) {
+  .accommodation--2 {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .accommodation--2 {
+    flex-direction: column;
+    gap: 5rem;
+  }
 }
 .accommodation__images {
   flex: 0 0 50%;
@@ -516,28 +576,50 @@ a {
 .accommodation__images--2 {
   position: absolute;
   width: 35%;
-  height: 85%;
-  top: 30%;
+  height: 60%;
+  top: 52%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (max-width: 37.5em) {
+  .accommodation__images--2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .accommodation__images--2 {
+    display: none;
+  }
 }
 .accommodation__images--2--right {
   left: 85%;
 }
 .accommodation__images--2--left {
-  right: 80%;
+  right: 75%;
 }
 .accommodation__details {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  position: relative;
 }
 .accommodation__details__image {
   position: absolute;
   top: -3.5rem;
+  right: 0rem;
   width: 20rem;
 }
-.accommodation__details__heading--pinsons {
+@media only screen and (max-width: 37.5em) {
+  .accommodation__details__image {
+    display: none;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .accommodation__details__image {
+    display: none;
+  }
+}
+.accommodation__details__heading--mesanges {
   color: #382FA6;
 }
 .accommodation__details h2 {
@@ -553,6 +635,77 @@ a {
   font-size: 2rem;
 }
 
+.area_presentation {
+  background: hsla(0deg, 0%, 100%, 0.66);
+  padding: 5rem 0;
+}
+.area_presentation__content {
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media only screen and (min-width: 56.25em) and (max-width: 75em) {
+  .area_presentation__content {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .area_presentation__content {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .area_presentation__content {
+    width: 75%;
+  }
+}
+.area_presentation h1 {
+  font-size: 4.5em;
+  margin-bottom: 2rem;
+}
+.area_presentation__image {
+  float: left;
+  width: 18rem;
+  padding-right: 2rem;
+}
+.area_presentation__text {
+  font-size: 1.6em;
+  text-align: start;
+}
+
+.services-list {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 10rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .services-list {
+    gap: 3rem;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .services-list {
+    gap: 3rem;
+  }
+}
+
+.service {
+  width: 100%;
+}
+.service__icon {
+  width: 15rem;
+  aspect-ratio: 1;
+}
+.service h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.service__text {
+  font-size: 1.5rem;
+}
+
 .header {
   position: fixed;
   background-color: var(--color1);
@@ -560,6 +713,7 @@ a {
   flex-wrap: wrap;
   height: auto;
   justify-content: space-around;
+  align-items: center;
   margin: 0 auto;
   width: 100%;
   box-shadow: var(--shadow);
@@ -616,5 +770,5 @@ a {
 }
 .footer__image {
   width: 100%;
-  transform: translateY(4px);
+  transform: translateY(6px);
 }/*# sourceMappingURL=main.css.map */

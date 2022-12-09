@@ -10,9 +10,31 @@
   width: 80%; //min(100%, 90rem);
   margin: 3rem auto;
 
-  & h1{
+  & h1 {
     text-align: center;
   }
+}
+
+.section-area_presentation {
+  background-image: url("/img/ext_2.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto;
+  padding: 20rem 0;
+}
+
+.image-separator {
+  background-image: url("/img/ext_chats.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+.section-services {
+  padding: 8rem 0;
+  text-align: center;
 }
 
 .separator {

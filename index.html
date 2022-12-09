@@ -28,11 +28,12 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img
-          src="img/logo-web-transparent.png"
-          alt="Logo"
-          class="header__logo-img"
-        />
+        <a href="#"
+          ><img
+            src="img/logo-web-transparent.png"
+            alt="Logo"
+            class="header__logo-img"
+        /></a>
       </div>
       <nav class="header__nav">
         <ul class="header__list">
@@ -102,13 +103,16 @@
           </li>
         </ul>
       </nav>
+      <div class="header__btn">
+        <a href="#" class="btn btn--primary">Réservez maintenant</a>
+      </div>
     </header>
 
     <main>
       <section class="section-slider">
         <div class="slideshow">
           <img
-            src="./img/Accueil_2.webp"
+            src="./img/Accueil_3.webp"
             alt="Photo d'ensemble des gîtes"
             class="slideshow__image"
           />
@@ -132,7 +136,7 @@
         <div class="accommodation accommodation--1">
           <figure class="accommodation__images">
             <img
-              src="/img/pinson_0.webp"
+              src="/img/pinson_7.webp"
               alt="Gite les pinsons"
               class="accommodation__images--1"
             />
@@ -143,15 +147,15 @@
             />
           </figure>
           <div class="accommodation__details">
-            <h2 class="heading-secondary">
-              Nids des pinsons
-              <img
-                src="/img/pinson_oiseau.webp"
-                alt="pinson"
-                class="accommodation__details__image"
-              />
-            </h2>
-            <h3 class="heading-tertiary u-align-right">Studio pour 2 personnes</h3>
+            <h2 class="heading-secondary">Nids des pinsons</h2>
+            <img
+              src="/img/pinson_oiseau.webp"
+              alt="pinson"
+              class="accommodation__details__image accommodation__details__image--1"
+            />
+            <h3 class="heading-tertiary u-align-right">
+              Studio pour 2 personnes
+            </h3>
             <p>
               En rez de chaussée devant la piscine, venez profiter de ce superbe
               studio sur-équipé avec vue sur les bois de chênes côté fenêtre et
@@ -164,27 +168,31 @@
         <div class="accommodation accommodation--2">
           <figure class="accommodation__images">
             <img
-              src="/img/pinson_0.webp"
+              src="/img/Mesanges_02.webp"
               alt="Gite les pinsons"
               class="accommodation__images--1"
             />
             <img
               src="/img/pinson_1.webp"
-              alt="Gite les pinsons"
+              alt="Gite les mésange"
               class="accommodation__images--2 accommodation__images--2--left"
             />
           </figure>
           <div class="accommodation__details">
-            <h2 class="heading-secondary accommodation__details__heading--pinsons">
-              Nids des pinsons
-              <img
-                src="/img/mesange_oiseau_d.png"
-                alt="pinson"
-                class="accommodation__details__image"
-              />
+            <h2
+              class="heading-secondary accommodation__details__heading--mesanges"
+            >
+              Nids des mésanges
             </h2>
-            <h3 class="heading-tertiary u-align-left">Studio pour 2 personnes</h3>
-            <p>
+            <img
+              src="/img/mesange_oiseau_d.png"
+              alt="pinson"
+              class="accommodation__details__image accommodation__details__image--2"
+            />
+            <h3 class="heading-tertiary u-align-left">
+              Studio pour 2 personnes
+            </h3>
+            <p class="u-align-left">
               En rez de chaussée devant la piscine, venez profiter de ce superbe
               studio sur-équipé avec vue sur les bois de chênes côté fenêtre et
               sur terrasse privative côté baie vitrée
@@ -194,9 +202,103 @@
         </div>
       </section>
 
-      <section class="section-area_presentation">PRESENTATION</section>
+      <section class="section-area_presentation">
+        <div class="area_presentation">
+          <div class="area_presentation__content">
+            <h1 class="heading-primary">Présentation du domaine</h1>
+            <img
+              src="/img/Mesange_oiseau_2.webp"
+              alt="une mésange"
+              class="area_presentation__image"
+            />
+            <p class="area_presentation__text">
+              La nature. Le ciel bleu. Les rochers. Les oiseaux et leurs chants,
+              les arbres et leur silence. Du calme à perte de vue ou des
+              activités à n'en plus finir. Amoureux de la Terre, d'action, de
+              contemplation ou amoureux tout court, soyez les bienvenues sur le
+              domaine CHANTE-CÉVENNES. Nous vous accueillons à partir de 2
+              nuitées, en week-end ou en Semaine, toute l'année. Chez nous, les
+              appartements s'appellent des "Nids". Nids d'oiseaux, nids
+              douillets, nids d'amour. Pour l'instant, 2 nids sont à
+              disposition, deux studios sur-équipés. D'autres viendront
+              progressivement...
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <section class="section-services">Nos prestations</section>
+      <div class="image-separator"></div>
+
+      <section class="section-services">
+        <h1 class="heading-primary u-margin-bottom-medium">Nos Prestations</h1>
+
+        <div class="services-list">
+          <div class="service">
+            <img
+              src="/img/icons/pool.svg"
+              alt="piscine exterieur"
+              class="service__icon"
+            />
+            <h2 class="heading-secondary">piscine exterieur</h2>
+            <p class="service__text">
+              Accessible pour les résidents du gîte d'avril à octobre et pour
+              christine toute l’année
+            </p>
+          </div>
+          <div class="service">
+            <img
+              src="/img/icons/terrace.svg"
+              alt="terrasse privative"
+              class="service__icon"
+            />
+            <h2 class="heading-secondary">terrasse privative</h2>
+            <p class="service__text">
+              Terrasse assez privé pour qu’une personnne d’1m90 ne puisse pas
+              regarder par dessus
+            </p>
+          </div>
+          <div class="service">
+            <img
+              src="/img/icons/clim.svg"
+              alt="climatisation"
+              class="service__icon"
+            />
+            <h2 class="heading-secondary">climatisation</h2>
+            <p class="service__text">
+              Pour que les mélodie n’ai pas froid l’hiver, l’été le printemps
+              l’autumn et autres nouvelles saisons
+            </p>
+          </div>
+          <div class="service">
+            <img src="/img/icons/wifi.svg" alt="wi-fi" class="service__icon" />
+            <h2 class="heading-secondary">wi-fi</h2>
+            <p class="service__text">
+              Wifi avec débit de fibre optique mais potentielement un VPN ça
+              dépend du Manu
+            </p>
+          </div>
+          <div class="service">
+            <img
+              src="/img/icons/map.svg"
+              alt="conseils et suggestions"
+              class="service__icon"
+            />
+            <h2 class="heading-secondary">conseils et suggestions</h2>
+            <p class="service__text">
+              Conseils sur les sorties aux alentours mais pas en ville parce que
+              la ville c’est pas bien
+            </p>
+          </div>
+          <div class="service">
+            <img src="/img/icons/moto.svg" alt="moto" class="service__icon" />
+            <h2 class="heading-secondary">garage moto</h2>
+            <p class="service__text">
+              Garage moto pour les motards qui n’ont pas de harley davinson
+              (c’est juste que ça rentre pas)
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section class="gallery">
         <figure class="gallery__item gallery__item--1">

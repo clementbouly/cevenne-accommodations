@@ -1,0 +1,36 @@
+@use "../abstracts/mixins" as *;
+
+.area_presentation{
+    background : hsla(0, 0%, 100%, 0.66);
+    padding: 5rem 0;
+
+    &__content{
+        width: 35%;
+        margin: 0 auto;
+        text-align: center;
+
+        @include respond(tab-land) {
+            width: 60%;
+        }
+
+        @include respond(phone, tab-port) {
+            width: 75%;
+        }
+    }
+
+    & h1 {
+        font-size: 4.5em;
+        margin-bottom: 2rem;
+    }
+
+    &__image{
+        float: left;
+        width: 18rem;
+        padding-right: 2rem;
+    }
+
+    &__text{
+        font-size: 1.6em;
+        text-align: start;
+    }
+}

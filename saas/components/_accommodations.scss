@@ -1,11 +1,23 @@
+@use "../abstracts/mixins" as *;
+
 .accommodation {
     display: flex;
     gap: 15rem;
-
     margin-bottom: 15rem;
+
+    @include respond(phone, tab-port) {
+        flex-direction: column;
+        gap: 5rem;
+        margin-bottom: 8rem;
+    }
 
     &--2 {
         flex-direction: row-reverse;
+
+        @include respond(phone, tab-port) {
+            flex-direction: column;
+            gap: 5rem;
+        }
     }
 
     &__images {
@@ -27,16 +39,20 @@
         &--2 {
             position: absolute;
             width: 35%;
-            height: 85%;
-            top: 30%;
+            height: 60%;
+            top: 52%;
             object-fit: cover;
+
+            @include respond(phone, tab-port) {
+                display: none;
+            }
 
             &--right {
                 left: 85%;
             }
 
             &--left {
-                right: 80%;
+                right: 75%;
             }
 
         }
@@ -46,16 +62,22 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        position: relative;
 
         &__image {
             position: absolute;
             top: -3.5rem;
+            right: 0rem;
             width: 20rem;
+
+            @include respond(phone, tab-port) {
+                display: none;
+            }
         }
 
         &__heading {
 
-            &--pinsons {
+            &--mesanges {
                 color: #382FA6;
             }
         }
