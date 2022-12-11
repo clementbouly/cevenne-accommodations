@@ -5,8 +5,13 @@
     padding-top: 20rem;
     height: auto;
 
-    &__image{
+    &__image {
         width: 100%;
         transform: translateY(6px);
     }
+}
+
+.test {
+    width: 30rem;
+    filter: brightness(70%);
 }

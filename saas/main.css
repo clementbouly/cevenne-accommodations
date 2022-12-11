@@ -225,10 +225,30 @@ a {
   color: var(--primary-color);
   font-size: 3.5rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
 
 .heading-tertiary {
   font-weight: 300;
   font-size: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-tertiary {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .heading-tertiary {
+    font-size: 2.2rem;
+  }
 }
 
 .paragraph {
@@ -369,15 +389,18 @@ a {
   padding: 1.5rem 4rem;
   font-weight: 600;
   text-align: center;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 37.5em) {
   .btn {
     padding: 1rem 2rem;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
   .btn {
     padding: 1rem 2rem;
+    font-size: 1.2rem;
   }
 }
 .btn--primary {
@@ -544,6 +567,22 @@ a {
     margin-bottom: 8rem;
   }
 }
+.accommodation--1 h3,
+.accommodation--1 p {
+  text-align: right;
+}
+@media only screen and (max-width: 37.5em) {
+  .accommodation--1 h3,
+.accommodation--1 p {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .accommodation--1 h3,
+.accommodation--1 p {
+    text-align: left;
+  }
+}
 .accommodation--2 {
   flex-direction: row-reverse;
 }
@@ -621,18 +660,64 @@ a {
 }
 .accommodation__details__heading--mesanges {
   color: #382FA6;
+  position: relative;
+}
+.accommodation__details__heading--mesanges::after {
+  background-image: url("/img/mesange_oiseau_d.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  content: "";
+  position: absolute;
+  bottom: -5rem;
+}
+.accommodation__details__heading--pinsons {
+  position: relative;
+}
+.accommodation__details__heading--pinsons::after {
+  background-image: url("/img/pinson_oiseau.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 15rem;
+  height: 10rem;
+  content: "";
+  position: absolute;
+  bottom: -1rem;
 }
 .accommodation__details h2 {
+  display: inline-block;
   border-bottom: 1px solid currentColor;
   position: relative;
 }
 .accommodation__details p {
   font-size: 1.8rem;
-  text-align: right;
+}
+@media only screen and (max-width: 37.5em) {
+  .accommodation__details p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .accommodation__details p {
+    font-size: 1.5rem;
+  }
 }
 .accommodation__details a {
   align-self: center;
   font-size: 2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .accommodation__details a {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .accommodation__details a {
+    font-size: 1.5rem;
+  }
 }
 
 .area_presentation {
@@ -771,4 +856,9 @@ a {
 .footer__image {
   width: 100%;
   transform: translateY(6px);
+}
+
+.test {
+  width: 30rem;
+  filter: brightness(70%);
 }/*# sourceMappingURL=main.css.map */

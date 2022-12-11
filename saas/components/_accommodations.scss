@@ -11,6 +11,18 @@
         margin-bottom: 8rem;
     }
 
+    &--1 {
+
+        & h3,
+        p {
+            text-align: right;
+
+            @include respond(phone, tab-port) {
+                text-align: left;
+            }
+        }
+    }
+
     &--2 {
         flex-direction: row-reverse;
 
@@ -79,10 +91,26 @@
 
             &--mesanges {
                 color: #382FA6;
+                position: relative;
+
+                &::after {
+                    // parameters are: image path, width, height, bottom
+                    @include after-image('/img/mesange_oiseau_d.png', 15rem, 15rem, -5rem);
+                }
+            }
+
+            &--pinsons {
+                position: relative;
+
+                &::after {
+                    // parameters are: image path, width, height, bottom
+                    @include after-image('/img/pinson_oiseau.webp', 15rem, 10rem, -1rem);
+                }
             }
         }
 
         & h2 {
+            display: inline-block;
             border-bottom: 1px solid currentColor;
             position: relative;
         }
@@ -91,17 +119,20 @@
 
         & p {
             font-size: 1.8rem;
-            text-align: right;
+
+            @include respond(phone, tab-port) {
+                font-size: 1.5rem;
+            }
         }
 
         & a {
             align-self: center;
             font-size: 2rem;
+
+            @include respond(phone, tab-port) {
+                font-size: 1.5rem;
+            }
         }
 
     }
-
-
-
-
 }
