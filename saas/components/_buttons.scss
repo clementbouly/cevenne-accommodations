@@ -16,5 +16,9 @@
     &--primary {
         color: var(--color3);
         background-color: var(--color9);
+
+        &:hover {
+            background-color: var(--color10);
+        }
     }
 }
