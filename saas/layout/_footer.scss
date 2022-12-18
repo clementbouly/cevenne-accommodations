@@ -2,8 +2,11 @@
 @use "../abstracts/mixins" as *;
 
 .footer {
-    padding-top: 20rem;
+    border-top: 1px solid var(--color7);
+    margin-top: 5rem;
+    padding-top: 2.5rem;
     height: auto;
+    text-align: center;
 
     &__image {
         width: 100%;
@@ -12,7 +15,32 @@
     }
 }
 
-.test {
-    width: 30rem;
-    filter: brightness(70%);
+.partners-logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: min(90rem, 90%);
+    margin: 5rem auto;
+    gap: 2.5rem;
+    place-items: center;
+
+    & img {
+        width: min(70%, 20rem);
+        object-fit: contain;
+    }
+
+
+    &__tourism-herault {
+        filter: brightness(50%);
+    }
+
+    &__LPO, &__parc-cevennes {
+        width: 10rem !important;
+    }
+}
+
+.legal-mentions {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    width: 90%;
+    margin: 0 auto;
 }
