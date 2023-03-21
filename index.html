@@ -14,92 +14,12 @@
 		/>
 		<link rel="shortcut icon" type="image/png" href="img/dove-solid.svg" />
 
-		<script type="module" src="/main.js"></script>
+		<script type="module" src="/main.ts"></script>
 
 		<title>Domaine Chante Cévennes</title>
 	</head>
 	<body>
-		<header class="header">
-			<div class="header__logo">
-				<a href="#"
-					><img
-						src="img/logo-web-transparent.png"
-						alt="Logo"
-						class="header__logo-img"
-				/></a>
-			</div>
-			<nav class="header__nav">
-				<ul class="header__list">
-					<li class="header__item">
-						<a href="./index.html" class="header__link"
-							>Accueil
-							<svg
-								class="header__link__graphic header__link__graphic--slide"
-								width="300%"
-								height="100%"
-								viewBox="0 0 1200 60"
-								preserveAspectRatio="none"
-							>
-								<path
-									d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"
-								></path>
-							</svg>
-						</a>
-					</li>
-					<li class="header__item">
-						<a href="#price" class="header__link"
-							>Tarif
-							<svg
-								class="header__link__graphic header__link__graphic--slide"
-								width="300%"
-								height="100%"
-								viewBox="0 0 1200 60"
-								preserveAspectRatio="none"
-							>
-								<path
-									d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"
-								></path>
-							</svg>
-						</a>
-					</li>
-					<li class="header__item">
-						<a href="#tourism" class="header__link"
-							>Tourisme
-							<svg
-								class="header__link__graphic header__link__graphic--slide"
-								width="300%"
-								height="100%"
-								viewBox="0 0 1200 60"
-								preserveAspectRatio="none"
-							>
-								<path
-									d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"
-								></path>
-							</svg>
-						</a>
-					</li>
-					<li class="header__item">
-						<a href="#contact" class="header__link"
-							>Contact
-							<svg
-								class="header__link__graphic header__link__graphic--slide"
-								width="300%"
-								height="100%"
-								viewBox="0 0 1200 60"
-								preserveAspectRatio="none"
-							>
-								<path
-									d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"
-								></path>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__btn">
-				<a href="#" class="btn btn--primary">Réservez maintenant</a>
-			</div>
-		</header>
+		<header-component></header-component>
 
 		<main>
 			<section class="section-slider">
@@ -110,9 +30,7 @@
 						class="slideshow__image"
 					/>
 					<div class="slideshow__title">
-						<h1 class="slideshow__title-main">
-							Location de gîtes dans les Cévennes
-						</h1>
+						<h1 class="slideshow__title-main">Location de gîtes dans les Cévennes</h1>
 						<p class="slideshow__title-sub">
 							Réservez nos appartements de 1 à 2 personnes
 						</p>
@@ -124,9 +42,7 @@
 			</div>
 
 			<section class="section-accommodations">
-				<h2 class="heading-primary u-margin-bottom-big">
-					Nos Hébergements
-				</h2>
+				<h2 class="heading-primary u-margin-bottom-big">Nos Hébergements</h2>
 
 				<div class="accommodation accommodation--1">
 					<figure class="accommodation__images">
@@ -142,19 +58,14 @@
 						/>
 					</figure>
 					<div class="accommodation__details">
-						<h2
-							class="heading-secondary accommodation__details__heading--pinsons"
-						>
+						<h2 class="heading-secondary accommodation__details__heading--pinsons">
 							Nids des pinsons
 						</h2>
-						<h3 class="heading-tertiary">
-							Studio pour 2 personnes
-						</h3>
+						<h3 class="heading-tertiary">Studio pour 2 personnes</h3>
 						<p>
-							En rez de chaussée devant la piscine, venez profiter
-							de ce superbe studio sur-équipé avec vue sur les
-							bois de chênes côté fenêtre et sur terrasse
-							privative côté baie vitrée
+							En rez de chaussée devant la piscine, venez profiter de ce superbe
+							studio sur-équipé avec vue sur les bois de chênes côté fenêtre et sur
+							terrasse privative côté baie vitrée
 						</p>
 						<a href="./pages/pinson.html" class="btn btn--primary"
 							>Réserver maintenant</a
@@ -176,23 +87,16 @@
 						/>
 					</figure>
 					<div class="accommodation__details">
-						<h2
-							class="heading-secondary accommodation__details__heading--mesanges"
-						>
+						<h2 class="heading-secondary accommodation__details__heading--mesanges">
 							Nids des mésanges
 						</h2>
-						<h3 class="heading-tertiary u-align-left">
-							Studio pour 2 personnes
-						</h3>
+						<h3 class="heading-tertiary u-align-left">Studio pour 2 personnes</h3>
 						<p class="u-align-left">
-							En rez de chaussée devant la piscine, venez profiter
-							de ce superbe studio sur-équipé avec vue sur les
-							bois de chênes côté fenêtre et sur terrasse
-							privative côté baie vitrée
+							En rez de chaussée devant la piscine, venez profiter de ce superbe
+							studio sur-équipé avec vue sur les bois de chênes côté fenêtre et sur
+							terrasse privative côté baie vitrée
 						</p>
-						<a href="#" class="btn btn--primary"
-							>Réserver maintenant</a
-						>
+						<a href="#" class="btn btn--primary">Réserver maintenant</a>
 					</div>
 				</div>
 			</section>
@@ -207,18 +111,15 @@
 							class="area_presentation__image"
 						/>
 						<p class="area_presentation__text">
-							La nature. Le ciel bleu. Les rochers. Les oiseaux et
-							leurs chants, les arbres et leur silence. Du calme à
-							perte de vue ou des activités à n'en plus finir.
-							Amoureux de la Terre, d'action, de contemplation ou
-							amoureux tout court, soyez les bienvenues sur le
-							domaine CHANTE-CÉVENNES. Nous vous accueillons à
-							partir de 2 nuitées, en week-end ou en Semaine,
-							toute l'année. Chez nous, les appartements
-							s'appellent des "Nids". Nids d'oiseaux, nids
-							douillets, nids d'amour. Pour l'instant, 2 nids sont
-							à disposition, deux studios sur-équipés. D'autres
-							viendront progressivement...
+							La nature. Le ciel bleu. Les rochers. Les oiseaux et leurs chants, les
+							arbres et leur silence. Du calme à perte de vue ou des activités à n'en
+							plus finir. Amoureux de la Terre, d'action, de contemplation ou amoureux
+							tout court, soyez les bienvenues sur le domaine CHANTE-CÉVENNES. Nous
+							vous accueillons à partir de 2 nuitées, en week-end ou en Semaine, toute
+							l'année. Chez nous, les appartements s'appellent des "Nids". Nids
+							d'oiseaux, nids douillets, nids d'amour. Pour l'instant, 2 nids sont à
+							disposition, deux studios sur-équipés. D'autres viendront
+							progressivement...
 						</p>
 					</div>
 				</div>
@@ -227,9 +128,7 @@
 			<div class="image-separator"></div>
 
 			<section class="section-services">
-				<h2 class="heading-primary u-margin-bottom-medium">
-					Nos Prestations
-				</h2>
+				<h2 class="heading-primary u-margin-bottom-medium">Nos Prestations</h2>
 
 				<div class="services-list">
 					<div class="service">
@@ -240,8 +139,8 @@
 						/>
 						<h3 class="heading-secondary">piscine exterieur</h3>
 						<p class="service__text">
-							Accessible pour les résidents du gîte d'avril à
-							octobre et pour christine toute l’année
+							Accessible pour les résidents du gîte d'avril à octobre et pour
+							christine toute l’année
 						</p>
 					</div>
 					<div class="service">
@@ -252,32 +151,24 @@
 						/>
 						<h3 class="heading-secondary">terrasse privative</h3>
 						<p class="service__text">
-							Terrasse assez privé pour qu’une personnne d’1m90 ne
-							puisse pas regarder par dessus
+							Terrasse assez privé pour qu’une personnne d’1m90 ne puisse pas regarder
+							par dessus
 						</p>
 					</div>
 					<div class="service">
-						<img
-							src="/img/icons/clim.svg"
-							alt="climatisation"
-							class="service__icon"
-						/>
+						<img src="/img/icons/clim.svg" alt="climatisation" class="service__icon" />
 						<h3 class="heading-secondary">climatisation</h3>
 						<p class="service__text">
-							Pour que les mélodie n’ai pas froid l’hiver, l’été
-							le printemps l’autumn et autres nouvelles saisons
+							Pour que les mélodie n’ai pas froid l’hiver, l’été le printemps l’autumn
+							et autres nouvelles saisons
 						</p>
 					</div>
 					<div class="service">
-						<img
-							src="/img/icons/wifi.svg"
-							alt="wi-fi"
-							class="service__icon"
-						/>
+						<img src="/img/icons/wifi.svg" alt="wi-fi" class="service__icon" />
 						<h3 class="heading-secondary">wi-fi</h3>
 						<p class="service__text">
-							Wifi avec débit de fibre optique mais potentielement
-							un VPN ça dépend du Manu
+							Wifi avec débit de fibre optique mais potentielement un VPN ça dépend du
+							Manu
 						</p>
 					</div>
 					<div class="service">
@@ -286,24 +177,18 @@
 							alt="conseils et suggestions"
 							class="service__icon"
 						/>
-						<h3 class="heading-secondary">
-							conseils et suggestions
-						</h3>
+						<h3 class="heading-secondary">conseils et suggestions</h3>
 						<p class="service__text">
-							Conseils sur les sorties aux alentours mais pas en
-							ville parce que la ville c’est pas bien
+							Conseils sur les sorties aux alentours mais pas en ville parce que la
+							ville c’est pas bien
 						</p>
 					</div>
 					<div class="service">
-						<img
-							src="/img/icons/moto.svg"
-							alt="moto"
-							class="service__icon"
-						/>
+						<img src="/img/icons/moto.svg" alt="moto" class="service__icon" />
 						<h3 class="heading-secondary">garage moto</h3>
 						<p class="service__text">
-							Garage moto pour les motards qui n’ont pas de harley
-							davinson (c’est juste que ça rentre pas)
+							Garage moto pour les motards qui n’ont pas de harley davinson (c’est
+							juste que ça rentre pas)
 						</p>
 					</div>
 				</div>
@@ -311,125 +196,49 @@
 
 			<section class="gallery">
 				<figure class="gallery__item gallery__item--1">
-					<img
-						src="img/piscine_1.webp"
-						alt="Gallery 1"
-						class="gallery__img"
-					/>
+					<img src="img/piscine_1.webp" alt="Gallery 1" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--2">
-					<img
-						src="img/Accueil_1.webp"
-						alt="Gallery 13"
-						class="gallery__img"
-					/>
+					<img src="img/Accueil_1.webp" alt="Gallery 13" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--3">
-					<img
-						src="img/ext_6.webp"
-						alt="Gallery 3"
-						class="gallery__img"
-					/>
+					<img src="img/ext_6.webp" alt="Gallery 3" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--4">
-					<img
-						src="img/repas_1.webp"
-						alt="Gallery 4"
-						class="gallery__img"
-					/>
+					<img src="img/repas_1.webp" alt="Gallery 4" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--5">
-					<img
-						src="img/ext_4.webp"
-						alt="Gallery 5"
-						class="gallery__img"
-					/>
+					<img src="img/ext_4.webp" alt="Gallery 5" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--6">
-					<img
-						src="img/piscine_2.webp"
-						alt="Gallery 6"
-						class="gallery__img"
-					/>
+					<img src="img/piscine_2.webp" alt="Gallery 6" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--7">
-					<img
-						src="img/ext_2.webp"
-						alt="Gallery 7"
-						class="gallery__img"
-					/>
+					<img src="img/ext_2.webp" alt="Gallery 7" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--8">
-					<img
-						src="img/gite1.webp"
-						alt="Gallery 8"
-						class="gallery__img"
-					/>
+					<img src="img/gite1.webp" alt="Gallery 8" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--9">
-					<img
-						src="img/ext_1.webp"
-						alt="Gallery 9"
-						class="gallery__img"
-					/>
+					<img src="img/ext_1.webp" alt="Gallery 9" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--10">
-					<img
-						src="img/pinson_4.webp"
-						alt="Gallery 10"
-						class="gallery__img"
-					/>
+					<img src="img/pinson_4.webp" alt="Gallery 10" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--11">
-					<img
-						src="img/picSaintLoup.jpg"
-						alt="Gallery 11"
-						class="gallery__img"
-					/>
+					<img src="img/picSaintLoup.jpg" alt="Gallery 11" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--12">
-					<img
-						src="img/entrée_domaine_1.webp"
-						alt="Gallery 12"
-						class="gallery__img"
-					/>
+					<img src="img/entrée_domaine_1.webp" alt="Gallery 12" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--13">
-					<img
-						src="img/ext_5.webp"
-						alt="Gallery 2"
-						class="gallery__img"
-					/>
+					<img src="img/ext_5.webp" alt="Gallery 2" class="gallery__img" />
 				</figure>
 				<figure class="gallery__item gallery__item--14">
-					<img
-						src="img/piscine_3.webp"
-						alt="Gallery 14"
-						class="gallery__img"
-					/>
+					<img src="img/piscine_3.webp" alt="Gallery 14" class="gallery__img" />
 				</figure>
 			</section>
 		</main>
-		<footer class="footer">
-			<h3 class="heading-secondary">Nos Partenaires</h3>
-			<div class="partners-logo">
-        <img src="/img/Footer/Herault Departement.png" alt="Département hérault">
-        <img src="/img/Footer/LPO.png" alt="Ligue de Protection des oiseaux" class="partners-logo__LPO">
-        <img src="/img/Footer/moto et motards.png" alt="Tourisme hérault">
-        <img src="/img/Footer/moto-trip.png" alt="Tourisme hérault">
-        <img src="/img/Footer/Parc cévennes.png" alt="Parc des cévennes" class="partners-logo__parc-cevennes">
-        <img src="/img/Footer/Pic saint loup.png" alt="Tourisme hérault">
-        <img src="/img/Footer/repaire motards.png" alt="Tourisme hérault">
-        <img src="/img/Footer/Tourism_herault.png" alt="Tourisme hérault" class="partners-logo__tourism-herault">
-      </div>
-			<p class="legal-mentions">
-				©CHANTE-CEVENNES.FR | TOUS DROITS RÉSERVÉS | MENTIONS LÉGALES
-			</p>
-			<img
-				src="/img/footer_image-removebg-preview (1).png"
-				alt="footer"
-				class="footer__image"
-			/>
-		</footer>
+		<footer-component></footer-component>
 	</body>
 </html>
