@@ -8,23 +8,23 @@ class FooterComponent extends HTMLElement {
         <footer class="footer">
 			<h3 class="heading-secondary">Nos Partenaires :</h3>
 			<figure class="partners-logo">
-				<img src="/img/Footer/Herault Departement.png" alt="Département hérault" />
+				<img src="/img/Herault Departement.png" alt="Département hérault" />
 				<img
-					src="/img/Footer/LPO.png"
+					src="/img/LPO.png"
 					alt="Ligue de Protection des oiseaux"
 					class="partners-logo__LPO"
 				/>
-				<img src="/img/Footer/moto et motards.png" alt="Tourisme hérault" />
-				<img src="/img/Footer/moto-trip.png" alt="Tourisme hérault" />
+				<img src="/img/moto et motards.png" alt="Tourisme hérault" />
+				<img src="/img/moto-trip.png" alt="Tourisme hérault" />
 				<img
-					src="/img/Footer/Parc cévennes.png"
+					src="/img/Parc cévennes.png"
 					alt="Parc des cévennes"
 					class="partners-logo__parc-cevennes"
 				/>
-				<img src="/img/Footer/Pic saint loup.png" alt="Tourisme hérault" />
-				<img src="/img/Footer/repaire motards.png" alt="Tourisme hérault" />
+				<img src="/img/Pic saint loup.png" alt="Tourisme hérault" />
+				<img src="/img/repaire motards.png" alt="Tourisme hérault" />
 				<img
-					src="/img/Footer/Tourism_herault.png"
+					src="/img/Tourism_herault.png"
 					alt="Tourisme hérault"
 					class="partners-logo__tourism-herault"
 				/>

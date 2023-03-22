@@ -1,20 +1,20 @@
 {
-  "name": "website-chante_cevennes",
-  "version": "1.0.0",
-  "description": "Landing page for the \"Gites Chante Cévennes\" - Html/Sass/Javascript",
-  "main": "index.html",
-  "repository": "git@github.com:clementbouly/cevenne-accommodations.git",
-  "author": "clementbouly <clementbouly@hotmail.fr>",
-  "license": "MIT",
-  "scripts": {
-    "dev": "vite",
-    "host": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "sass": "^1.56.2",
-    "typescript": "^5.0.2",
-    "vite": "^4.0.1"
-  }
+	"name": "website-chante_cevennes",
+	"version": "1.0.0",
+	"description": "Landing page for the \"Gites Chante Cévennes\" - Html/Sass/Javascript",
+	"main": "index.html",
+	"repository": "git@github.com:clementbouly/cevenne-accommodations.git",
+	"author": "clementbouly <clementbouly@hotmail.fr>",
+	"license": "MIT",
+	"scripts": {
+		"dev": "vite",
+		"host": "vite --host",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"sass": "^1.56.2",
+		"typescript": "^5.0.2",
+		"vite": "^4.0.1"
+	}
 }
