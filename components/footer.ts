@@ -52,7 +52,7 @@ class FooterComponent extends HTMLElement {
 		this.shadow.appendChild(style)
 	}
 
-	connectedCallback() {}
+	connectedCallback() { }
 }
 
 customElements.define("footer-component", FooterComponent)

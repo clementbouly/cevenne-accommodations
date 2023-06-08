@@ -95,7 +95,7 @@
 
                 &::after {
                     // parameters are: image path, width, height, bottom
-                    @include after-image('/assets/mesange_oiseau_d.png', 15rem, 15rem, -5rem);
+                    @include after-image('/img/mesange_oiseau_d.png', 15rem, 15rem, -5rem);
                 }
             }
 
@@ -104,7 +104,7 @@
 
                 &::after {
                     // parameters are: image path, width, height, bottom
-                    @include after-image('/assets/pinson_oiseau.webp', 15rem, 10rem, -1rem);
+                    @include after-image('/img/pinson_oiseau.webp', 15rem, 10rem, -1rem);
                 }
             }
         }
