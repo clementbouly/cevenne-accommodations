@@ -82,7 +82,7 @@ class HeaderComponent extends HTMLElement {
 			</ul>
 		</nav>
 		<div class="header__btn">
-			<a href="#" class="btn btn--primary">Réservez maintenant</a>
+			<a href="#" class="btn btn--primary" id="header__cta">Réservez maintenant</a>
 		</div>
 	</header>
 		`
